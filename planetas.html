@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema solar</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <link rel="stylesheet" type="text/css" href="responsiveness.css" />
+</head>
+
+<body class="contenedor">
+    <header class="menu">
+        <img src="png-transparent-earth-planet-silhouette-stencil-solar-system-earth-logo-sticker-saturn.png" alt=""
+            class="logo" />
+        <nav class="nav1">
+            <ul>
+                <li><a href="file:///C:/Users/Aleja/OneDrive/Desktop/VisualCode/APIPlanetas/planetas.html#">Planets</a></li>
+                <li><a href="#">Moons</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bienvenida">
+        <h3>Click on each image to see every planets' moons!</h3>
+        <button class="menu-toggle nav2-toggle">&#9776;</button>
+        <nav class="nav2">
+            <ul>
+                <li><a class="enlace-seccion" data-target="mercurio">Mercury</a></li>
+                <li><a class="enlace-seccion" data-target="venus">Venus</a></li>
+                <li><a class="enlace-seccion" data-target="tierra">Earth</a></li>
+                <li><a class="enlace-seccion" data-target="marte">Mars</a></li>
+                <li><a class="enlace-seccion" data-target="jupiter">Jupiter</a></li>
+                <li><a class="enlace-seccion" data-target="saturno">Saturn</a></li>
+                <li><a class="enlace-seccion" data-target="urano">Uranus</a></li>
+                <li><a class="enlace-seccion" data-target="neptuno">Neptune</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <section class="planetas">
+        <div class= "planeta mercurio" onclick="mostrarLunas('mercurio')">
+            <h1>Mercury</h1>
+            <img src="https://vignette.wikia.nocookie.net/planetpedia/images/7/72/MercuryCGIpromo.GIF/revision/latest?cb=20160715132914" />
+            <p> Closest Planet to the Sun: -170º to 420º C. Its rotational motion is slow (58 Earth days), while its translation is very fast (88 Earth days). Rough surface: Mercury's surface is marked by large canyons, cliffs and craters from past tectonic activity. Due to its proximity to the sun.
+            </p>
+            <span>Mercury has no moons.</span>
+        </div>
+        <div class="planeta venus" onclick="mostrarLunas('venus')">
+            <h1>Venus</h1>
+            <img src="https://www.bspacy.com/wp-content/uploads/2022/05/mars-min.png" alt="Venus Image" />
+            <p> It reaches a temperature of up to 460º C. due to its dense atmosphere, 96% of which is made up of carbon dioxide. A very slow planet: Its translation takes 225 days and its rotation takes 243 (Earth days). The hottest rocky planet in the solar system. 
+            </p>
+            <span>It's a planet with no moons.</span>
+            </div>
+            <div class="planeta tierra" onclick="mostrarLunas('tierra')">
+                <h1>Tierra</h1>
+                <img src="https://purepng.com/public/uploads/large/purepng.com-earthearthplanetglobethird-planet-from-the-sun-1411526988004rc27u.png" alt="Earth image" />
+                <p> Our home, the only rocky planet that holds an atmosfere optimal for human life (78.98% nitrogen and 20.95% oxygen), with an average temperature of 14ºC. It's also the only planet with liquid state water (70% of surface). 
+                </p>
+                <span>Click to see our Moon. </span>
+        </div>
+    </div>
+    <div class="planeta marte" onclick="mostrarLunas('marte')">
+        <h1>Mars</h1>
+        <img src="https://www.freepnglogos.com/uploads/mars-png/mars-hameed-deviantart-5.png" alt="Earth image" />
+        <p> One of the four rocky planets in our solar system, its temperature reaches up to 20ºC in Summer, at nights this plums to 73ºC. We can find small traces of oxygen in its atmosphere, but it's mainly composed by Carbon Dioxide (95%). Its surface is rocky, with canyons, volcanoes, dry lake beds and craters all over it. 
+        </p>
+        <span>Mars has 2 moons: Fobos and Deimos.</span>
+</div>
+<div class="planeta jupiter" onclick="mostrarLunas('jupiter')">
+    <h1>Jupiter</h1>
+    <img src="https://www.pngmart.com/files/22/Jupiter-PNG-Free-Download.png" alt="Jupiter image" />
+    <p> First gas planet in our path, composed mostly with hydrogen and helium. Deep in the atmosphere, pressure and temperature increase, compressing the hydrogen gas into a liquid. It is a very hot planet (from 930ºC. to 1330ºC).
+    </p>
+    <span>Jupiter's Moons: Europe, Io, Ganymede, Callisto.</span>
+</div>
+<div class="planeta saturno" onclick="mostrarLunas('saturno')">
+    <h1>Saturn</h1>
+    <img src="https://th.bing.com/th/id/R.d9443528051408a5238829ea2f65d896?rik=XfdBl5Y2%2b0A6Hg&pid=ImgRaw&r=0" alt="Saturn image" />
+    <p> Like Jupiter, Saturn is made mostly of hydrogen and helium. At Saturn's center is a dense core of metals like iron and nickel surrounded by rocky material and other compounds solidified by intense pressure and heat. At the top layer of the atmosphere, the temperature ranges from minus 173 degrees Celsius to minus 113 degrees. 
+    </p>
+    <span>Saturn's moons: Titan, Enceladus, Japetus, Mimas, Hyperion, Tethys.</span>
+</div>
+<div class="planeta urano" onclick="mostrarLunas('urano')">
+    <h1>Uranus</h1>
+    <img src="https://i.pinimg.com/originals/f3/7b/52/f37b5273252024d60d9bb5c73bccd627.png" alt="Uranus image" />
+    <p> It does not have a solid surface, so any temperatures are based on its atmosphere. Uranus shows a temperature range of -153 to -224 degrees Celsius. Uranus is an ice giant, meaning that its chemical makeup differs from Jupiter and Saturn, with strong enrichment in elements like carbon, nitrogen, sulfur, and oxygen, mixed with an atmosphere of hydrogen and helium.
+    </p>
+    <span> Uranus' moons: Titania, Miranda, Oberon, Umbriel, Ariel, Puck.</span>
+</div>
+<div class="planeta neptuno" onclick="mostrarLunas('neptuno')">
+    <h1>Neptune</h1>
+    <img src="https://th.bing.com/th/id/R.cc7f631f66b0968bb710396577289608?rik=hgFdIDep8C7QXQ&riu=http%3a%2f%2fsttff.antspad.net%2fimages%2fClassI_03.png&ehk=e1kn1y82Z2edBWXjP5FnIE9u3R5IFFjcvFa0K1FyQkA%3d&risl=&pid=ImgRaw&r=0" alt="Saturn image" />
+    <p> All told, the planet experiences temperatures that range from approximately -218 °C to -200 °C, making it the coldest planet in the Solar System. Neptune is one of two ice giants in the outer solar system (the other is Uranus). Most (80% or more) of the planet's mass is made up of a hot dense fluid of "icy" materials – water, methane, and ammonia – above a small, rocky core. 
+</p>
+<span>Neptune's moons: Triton.</span>
+</div>
+    </section>
+    <div id="lunas-container" class="oculto">
+        <!-- Contenedor para las imágenes de las lunas -->
+    </div>
+    
+<footer>
+<img src="https://leanpub.com/site_images/tothrivebeyondbelief/milky-way-map.jpg" alt="Solar system img">
+<div>
+    <h4> Learn more about what I do: </h4>
+ <img id="copiarEmail" src="C:\Users\Aleja\OneDrive\Desktop\VisualCode\Planetas\Inbox.png" alt="alejandrorubiofranco@hotmail.com">
+ <a href="https://www.linkedin.com/in/alejandro-rubio-franco" target="_blank">
+    <img src="C:\Users\Aleja\OneDrive\Desktop\VisualCode\Planetas\Linkedin.png" alt="Linkedin image">
+</a>
+<a href="https://github.com/Alex-RubioDev" target="_blank">
+    <img src="https://th.bing.com/th/id/R.9ce68bcab87f651b5a6bd16489896ef7?rik=leu%2flv8VNdFqdA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fgithub%2fgithub_PNG83.png&ehk=bffVXntcgwvN2bsjyHkhS%2f1VZ4TD%2fIs4SiEdl7gI67c%3d&risl=&pid=ImgRaw&r=0" alt="Github">
+</a>
+</div>
+<div>
+    <h3> Website de: </h3>
+    <span>Alejandro Rubio</span>
+</div>
+<script src="Lunas.js"></script>
+<script src="Navegacion.js"></script>
+</footer>
+</body>
+</html>

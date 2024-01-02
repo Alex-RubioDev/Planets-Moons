@@ -1,0 +1,162 @@
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas (teléfonos) */
+    * {
+        margin: 0;
+    box-sizing: border-box;
+    }}
+
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas (teléfonos) */
+    body {
+        font-size: 14px;
+    }
+
+    .contenedor {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        grid-template-columns: 1fr; 
+        padding: 0px; 
+        padding-top: 30px; 
+    }
+
+    .planetas div {
+        text-align: center; 
+    }
+
+    .planetas img {
+        max-width: 80%; 
+        margin: 0 auto;
+        display: block; 
+    }
+
+    .planetas h1 {
+        font-size: 24px; 
+    }
+
+    .planetas p {
+        font-size: 14px; 
+    }
+
+    .planetas span {
+        font-size: 12px; 
+    }
+}
+
+
+/* Estilos para menú hamburguesa */
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #452c63;
+    }
+    .menu-toggle.nav2-toggle {
+        display: block;
+        margin: 0 auto; 
+        cursor: pointer;
+        background-color: #fff;
+        border: 2px solid #452c63;
+        border-radius: 10%;
+        margin-top: 20px;
+    }
+
+    .nav1 ul,
+    .nav2 ul {
+        display: none; /* Ocultar lista de enlaces por defecto */
+        position: absolute;
+        top: 60px; /* Ajustar según la altura del header */
+        right: 0;
+        background-color: #452c63;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav1 ul li,
+    .nav2 ul li {
+        display: block;
+        padding: 10px;
+        margin: 0;
+        padding-top: 0px;
+    }
+
+    .nav1,
+    .nav2 {
+        display: block;
+        position: relative;
+    }
+
+    .nav1:before,
+    .nav2:before,
+    .nav1:after,
+    .nav2:after {
+        content: '';
+        display: table;
+    }
+
+    .nav1:after,
+    .nav2:after {
+        clear: both;
+    }
+
+    .logo,
+    nav.nav1,
+    nav.nav2 {
+        float: none;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .bienvenida {
+        padding-top: 150px; /* Ajuste de espacio superior */
+        padding-bottom: 30px;
+    }
+
+    .bienvenida img {
+        width: 100%;
+    }
+
+    /* Establecer un nuevo valor para margin-top dentro del media query */
+    .nav2 ul li {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .nav2 ul {
+        top: 90px; /* Ajuste según la altura del header y bienvenida */
+        margin: 0;
+    }
+
+    .menu-toggle, .nav2-toggle {
+        display: block;
+    }
+
+    .nav1 ul, .nav2 ul {
+        display: none; /* Ocultar lista de enlaces por defecto */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer div {
+        text-align: center; /* Centrar el texto e imágenes dentro del div en pantallas más pequeñas */
+        padding-top: 15px;
+        padding-left: 0px;
+    }
+
+    footer div img {
+        height: 30px; /* Reducir la altura de las imágenes secundarias */
+        margin: 10px; /* Añadir margen a las imágenes secundarias */
+    }
+}

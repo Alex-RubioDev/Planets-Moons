@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu-toggle, .nav2-toggle {
+    display: none;
+}
+.contenedor {
+    max-width: 100%; /* Puedes ajustar esto según tus necesidades */
+    margin: 0 auto; /* Centrar el contenedor en la pantalla */
+}
+
+
+body {
+    background-image: url(https://getwallpapers.com/wallpaper/full/9/c/6/366649.jpg);
+    font-family: calibri;
+    color: aliceblue;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-image: url("https://www.hdwallpapers.in/download/purple_nebula-HD.jpg");
+    width: 100%;
+    clear: both;
+    content: ' ';
+    display: table;
+    position: fixed;
+    image-orientation: flip;
+}
+
+.logo {
+    width: 90px;
+    height: 60px;
+    float: left;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.nav1 {
+    float: right;
+}
+
+nav.nav1 ul li {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: aliceblue;
+font-weight: bold;
+}
+
+.bienvenida {
+    text-align: center;
+    margin-left: auto;
+    background: url("https://popperfont.files.wordpress.com/2012/11/solarsystem.gif") center center no-repeat;
+    width: auto;
+    height: 300px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+nav.nav2 ul {
+    padding-left: 0;
+}
+
+nav.nav2 ul li {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 100px;
+    border-style:hidden;
+    border-color: #452c63;
+    padding-top: 80px;
+}
+
+nav.nav2 ul li a {
+    font-weight: bold;
+    list-style: none;
+padding-left: 50px;
+}
+
+.bien img {
+    width: auto;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: 1fr; /* Esto establece una sola fila */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+
+.planetas img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+}
+
+.planeta.saturno img {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+}
+
+.planetas div {
+    padding-top: 100px;
+}
+
+.planeta p {
+    padding-top: 20px;
+}
+
+#lunas-container {
+    display: none;
+}
+
+.oculto {
+    visibility: hidden;
+}
+
+footer {
+    background-color: #452c63;
+    height: 250px;
+    display: flex;
+    font-family: calibri;
+}
+
+footer img {
+    width: 230px;
+    height: 200px;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-radius: 10%;
+}
+
+footer div {
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+footer div img {
+    height: 50px;
+    width: auto;
+    margin: 20px;
+}
+
